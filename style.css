@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=The+Nautigal:wght@700&family=Ubuntu+Condensed&display=swap');
+:root{
+    --main-bg-color: #2874f0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+.Explore{
+    font-size: 11px;
+    font-weight: 00;
+    font-style: italic;
+    margin-top: -1px;
+    color: white;
+}
+.plus{
+    padding: 0;
+    color: gold;
+    font-weight: 500;
+}
+nav ul{
+    display: flex;
+    height: 58px;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 2px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.slider{
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card-item img:hover{
+        transform: scale(1.1);
+        transition: cubic-bezier(0.38, -0.12, 1, 0.94);
+
+}
+.card h2{
+    font-family: 'Lato', sans-serif; ;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
